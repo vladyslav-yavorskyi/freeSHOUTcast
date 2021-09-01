@@ -1,0 +1,26 @@
+.question {
+  padding: 100px 0;
+  & > h1 {
+    text-align: center;
+    color: #444;
+    font-weight: 600;
+    line-height: 1.5;
+    margin: 0 0 30px;
+    font-size: 30px;
+  }
+
+  &__table {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__nav {
+    & > h3 {
+      color: $gray;
+      font-size: 16px;
+      font-weight: 600;
+      padding: 15px 0;
+      cursor: pointer;
+    }
+  }
+}

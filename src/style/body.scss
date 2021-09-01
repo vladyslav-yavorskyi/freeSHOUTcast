@@ -1,0 +1,93 @@
+@import '_variables';
+
+.container {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  &__price {
+    text-align: center;
+    background-color: #f5f5f5;
+    border: 1px solid rgba(0, 0, 0, 0.075);
+    border-radius: 3px;
+    padding: 0 3rem;
+    height: 100%;
+    max-width: 20vw;
+
+    & > h1 {
+      font-weight: 700;
+      font-size: 20px;
+      text-transform: uppercase;
+      color: $gray;
+      letter-spacing: 1px;
+      padding: 15px 0;
+    }
+
+    & > h2 {
+      font-weight: 400;
+      color: $blue;
+      font-size: 64px;
+      line-height: 1;
+      padding: 25px 0;
+    }
+
+    & > ul {
+      margin: 0;
+      padding: 15px 0;
+      list-style: none;
+
+      & > li {
+        font-size: 1rem;
+        padding: 6px 0;
+        color: $gray;
+      }
+    }
+  }
+
+  &__form {
+    display: flex;
+    flex-direction: column;
+    margin-left: 12%;
+
+    background-color: rgba(255, 255, 255, 0.7);
+    border: 1px solid rgba(0, 0, 0, 0.075);
+    border-radius: 3px;
+    padding: 0 3rem;
+
+    max-width: 30vw;
+
+    & > h1 {
+      font-weight: 700;
+      font-size: 22px;
+      text-transform: uppercase;
+      color: #333;
+      letter-spacing: 1px;
+      padding: 15px 0;
+    }
+
+    & > span {
+      font-size: 18px;
+      font-weight: 400;
+      color: #454545;
+      line-height: 30px;
+      margin-top: 23px;
+      margin-bottom: 15px;
+    }
+
+    & > form {
+      display: flex;
+      flex-direction: column;
+
+      & > button {
+        width: 40%;
+        font-size: 16px;
+        border-radius: 23px;
+        margin: 20px 0;
+      }
+    }
+  }
+}
